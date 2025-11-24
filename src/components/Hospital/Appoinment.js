@@ -58,6 +58,7 @@ export const Appoinment = ({ setIsBookingOpen, hospital }) => {
   const handleTimeSelect = (time) => {
     if (!selectedDate) return;
     setSelectedTime(time);
+    setIsConfirmOpen(true);
   };
 
   const handleBookClick = () => {
