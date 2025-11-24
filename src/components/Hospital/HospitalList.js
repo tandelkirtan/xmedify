@@ -1,4 +1,4 @@
-import { Box, Button, Typography, Collapse, Snackbar, Alert } from "@mui/material";
+import { Box, Button, Typography, Snackbar, Alert } from "@mui/material";
 import hl from "../../assets/hospitallogo.png";
 import { Appoinment } from "./Appoinment";
 import { useState } from "react";
@@ -80,13 +80,15 @@ export const HospitalList = ({ hospital }) => {
         </Button>
       </Box>
       
-      <Collapse 
-        in={isBookingOpen} 
-        timeout={500}
-        sx={{ width: "100%" }}
-      >
-        <Appoinment setIsBookingOpen={setIsBookingOpen} isBookingOpen={isBookingOpen} hospital={hospital}/>
-      </Collapse>
+      {isBookingOpen && (
+        <Box sx={{ width: "100%", mt: 2 }}>
+          <Appoinment
+            setIsBookingOpen={setIsBookingOpen}
+            isBookingOpen={isBookingOpen}
+            hospital={hospital}
+          />
+        </Box>
+      )}
       <Snackbar
               open={isSnackbarOpen}
               autoHideDuration={3000}

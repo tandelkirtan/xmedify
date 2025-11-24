@@ -1,4 +1,4 @@
-import { Box, Stack } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import { MyHospitalSearch } from "../components/MyBookings/MyHospitalSearch";
 import { MyHospitalHero } from "../components/MyBookings/MyHospitalHero";
 import {  useEffect, useState } from "react";
@@ -28,6 +28,11 @@ export const MyBookings = () => {
           borderRadius: "0px 0px 20px 20px",
         }}
       ></Box>
+      <Box width="90%" mt={3}>
+        <Typography component="h1" variant="h4" fontWeight={700} color="#102851">
+          My Bookings
+        </Typography>
+      </Box>
       <MyHospitalSearch/>
       <MyHospitalHero/>
     </Stack>

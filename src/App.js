@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Home } from "./pages/Home";
 import { Hospital } from "./pages/Hospital";
@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/hospitals" element={<Hospital />} />
-          <Route path="/MyBookings" element={<MyBookings />} />
+          <Route path="/my-bookings" element={<MyBookings />} />
         </Routes>
       </BrowserRouter>
     </MedifyProvider>

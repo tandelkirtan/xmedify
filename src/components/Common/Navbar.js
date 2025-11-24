@@ -50,7 +50,7 @@ export const NavBarMenue = () => {
             <ListItemText primary={item.label} />
           </ListItem>
         ))}
-        <ListItem button onClick={handleDrawerToggle} sx={{ mt: 2 }} component={Link} to="/MyBookings">
+        <ListItem button onClick={handleDrawerToggle} sx={{ mt: 2 }} component={Link} to="/my-bookings">
           <Button
             variant="contained"
             fullWidth
@@ -133,7 +133,7 @@ export const NavBarMenue = () => {
         {!isMobile && (
           <Button
             component={Link}
-            to="/MyBookings"
+            to="/my-bookings"
             variant="contained"
             sx={{
               backgroundColor: '#2aa7ff',

@@ -58,7 +58,7 @@ export const HospitalHero = () => {
       >
         {hospitals && hospitals.length > 0 ? (
           <Box pl={4}>
-            <Typography fontWeight={700} variant="h6" gutterBottom>
+            <Typography fontWeight={700} variant="h1" fontSize={25} gutterBottom>
               {hospitalCount} medical center{hospitalCount !== 1 ? "s" : ""}{" "}
               available
               {selectedCity ? ` in ${selectedCity}` : ""}
