@@ -58,6 +58,10 @@ export const Appoinment = ({ setIsBookingOpen, hospital }) => {
   const handleTimeSelect = (time) => {
     if (!selectedDate) return;
     setSelectedTime(time);
+  };
+
+  const handleBookClick = () => {
+    if (!selectedDate || !selectedTime) return;
     setIsConfirmOpen(true);
   };
 
@@ -224,6 +228,15 @@ export const Appoinment = ({ setIsBookingOpen, hospital }) => {
               07:30 PM
             </Button>
         </Box>
+      </Box>
+      <Box mt={2} display="flex" justifyContent="flex-end">
+        <Button
+          variant="outlined"
+          disabled={!selectedDate || !selectedTime}
+          onClick={handleBookClick}
+        >
+          Book FREE Center Visit
+        </Button>
       </Box>
       <Modal open={isConfirmOpen} onClose={handleCloseConfirm}>
         <Box
