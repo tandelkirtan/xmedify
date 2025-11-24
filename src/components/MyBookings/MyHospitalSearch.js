@@ -75,7 +75,7 @@ export const MyHospitalSearch = () => {
               transition: "all 0.3s ease",
             }}
           >
-            Find Centers
+            Search
           </Button>
         </Box>
       </Box>

@@ -21,7 +21,7 @@ export const Hero = () => {
                 transform: 'translateY(-2px)',
               },
               transition: 'all 0.3s ease',  
-          }}>Find Centers</Button>
+          }}>Search</Button>
         </Box>
           <Box
             component={"img"}

@@ -32,7 +32,7 @@ export const Specialisation = () => {
             color: "white",
           }}
         >
-          Find Centers
+          Search
         </Button>
       </Container>
     </Box>
