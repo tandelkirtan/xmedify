@@ -6,11 +6,10 @@ export const MyHospitalList = ({item}) => {
 
 const time = item.appointmentTime
 const date = item.appointmentDate
-// const namee = item.hospital["Hospital Name"];
 const namee = item.hospital?.["Hospital Name"];
-const address = item.hospital["Address"];
-const speciality = item.hospital["Hospital Type"];
-const rating = item.hospital["Hospital overall rating"];
+const address = item.hospital?.["Address"];
+const speciality = item.hospital?.["Hospital Type"];
+const rating = item.hospital?.["Hospital overall rating"];
   
 
   return (
