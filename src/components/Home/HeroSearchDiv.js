@@ -67,6 +67,7 @@ const HeroSearchDiv = () => {
         flexDirection: { xs: "column", md: "row" }
       }}>
         <Select
+        id="state"
           sx={{ width: { xs: "90%", md: "30%" }, margin: "10px" }}
           value={selectedState}
           onChange={handleStateChange}
