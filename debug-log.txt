@@ -1,0 +1,11 @@
+npm verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+npm info using npm@10.9.3
+npm info using node@v22.20.0
+npm verbose title npm start
+npm verbose argv "start" "--loglevel" "verbose"
+npm verbose logfile logs-max:10 dir:C:\Users\Asus\AppData\Local\npm-cache\_logs\2025-11-20T19_53_22_856Z-
+npm verbose logfile C:\Users\Asus\AppData\Local\npm-cache\_logs\2025-11-20T19_53_22_856Z-debug-0.log
+
+> medify@0.1.0 start
+> react-scripts start
+
