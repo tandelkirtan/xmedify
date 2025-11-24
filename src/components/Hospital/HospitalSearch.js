@@ -218,6 +218,7 @@ export const HospitalSearch = () => {
         }}
       >
         <Select
+        id="state"
           sx={{ width: { xs: "90%", md: "30%" }, margin: "10px" }}
           displayEmpty
           value={selectedState}
