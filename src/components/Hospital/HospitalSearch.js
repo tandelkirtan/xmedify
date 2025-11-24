@@ -265,6 +265,7 @@ export const HospitalSearch = () => {
         </Select>
 
         <Button
+        id='searchBtn'
           sx={{
             width: { xs: "50%", md: "15%" },
             margin: "10px",

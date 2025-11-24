@@ -102,6 +102,7 @@ const HeroSearchDiv = () => {
         </Select>
         
         <Button
+        id='searchBtn'
           onClick={handleHomeSearch}
           sx={{
             width: { xs: "50%", md: "15%" },
