@@ -51,7 +51,7 @@ export const HospitalList = ({ hospital }) => {
           sx={{ width: { xs: "5rem", md: "10rem" } }}
         ></Box>
         <Box ml={2}>
-          <Typography color="#2aa7ff" fontWeight={700} fontSize={20}>{hospital["Hospital Name"]}</Typography>
+          <Typography component="h3" color="#2aa7ff" fontWeight={700} fontSize={20}>{hospital["Hospital Name"]}</Typography>
           <Typography fontWeight={700}>{hospital["Address"]}</Typography>
           <Typography>{hospital["Hospital Type"]}</Typography>
           <Box display="flex" gap={1} alignItems="center" bgcolor="green" width="40px" padding="1px 15px" color="white" borderRadius={1}>

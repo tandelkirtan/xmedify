@@ -17,7 +17,9 @@ const rating = item.hospital?.["Hospital overall rating"];
       <Box sx={{display: "flex", justifyContent: "start", alignItems: "center", width:{xs: "100%", md:"65%"}}}>
         <Box component="img" src={hl} alt="logo"sx={{ width: { xs: "5rem", md: "10rem" }, }}></Box>
         <Box ml={2}>
-          <Typography sx={{
+          <Typography
+          component="h3"
+          sx={{
             color:"#2aa7ff",
             fontWeight:"700",
             fontSize: "20px"
