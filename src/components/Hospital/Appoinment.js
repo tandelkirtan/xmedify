@@ -229,15 +229,6 @@ export const Appoinment = ({ setIsBookingOpen, hospital }) => {
             </Button>
         </Box>
       </Box>
-      <Box mt={2} display="flex" justifyContent="flex-end">
-        <Button
-          variant="outlined"
-          disabled={!selectedDate || !selectedTime}
-          onClick={handleBookClick}
-        >
-          Book FREE Center Visit
-        </Button>
-      </Box>
       <Modal open={isConfirmOpen} onClose={handleCloseConfirm}>
         <Box
           sx={{

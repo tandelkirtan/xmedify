@@ -66,18 +66,18 @@ export const HospitalList = ({ hospital }) => {
           Available Today
         </Typography>
         <Button
-          onClick={toggleBooking}
-          sx={{
-            backgroundColor: "#2aa7ff",
-            color: "white",
-            width: "80%",
-            '&:hover': {
-              backgroundColor: "#1e88e5",
-            }
-          }}
-        >
-          {isBookingOpen ? "Close" : "Book Free Center Visit"}
-        </Button>
+        onClick={toggleBooking}
+            variant="contained"
+            sx={{
+              textTransform: 'none',
+              fontSize: 16,
+              backgroundColor: '#2aa7ff',
+              color: 'white',
+              '&:hover': { backgroundColor: '#1f93e6' },
+            }}
+          >
+            Book FREE Center Visit
+          </Button>
       </Box>
       
       {isBookingOpen && (
