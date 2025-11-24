@@ -58,10 +58,15 @@ export const HospitalHero = () => {
       >
         {hospitals && hospitals.length > 0 ? (
           <Box pl={4}>
-            <Typography fontWeight={700} variant="h1" fontSize={25} gutterBottom>
+            <Typography
+              fontWeight={700}
+              variant="h1"
+              fontSize={25}
+              gutterBottom
+            >
               {hospitalCount} medical center{hospitalCount !== 1 ? "s" : ""}{" "}
               available
-              {selectedCity ? ` in ${selectedCity}` : ""}
+              {selectedCity ? ` in ${selectedCity.toLowerCase()}` : ""}
             </Typography>
             <Typography variant="body1" color="text.secondary" gutterBottom>
               Book appointments with minimum wait-time & verified doctor details
@@ -78,24 +83,24 @@ export const HospitalHero = () => {
           ))
         ) : (
           <Box
-          p={4}
-          sx={{
-            width: { xs: "100%", md: "90%" },
-            margin: "10px",
-            bgcolor: "white",
-            borderRadius: "8px",
-          }}
-        >
-          <Typography
-            m={5}
-            textAlign="center"
-            fontWeight={600}
-            fontSize={30}
-            color="#2aa7ff"
+            p={4}
+            sx={{
+              width: { xs: "100%", md: "90%" },
+              margin: "10px",
+              bgcolor: "white",
+              borderRadius: "8px",
+            }}
           >
-            Please Select State and City
-          </Typography>
-        </Box>
+            <Typography
+              m={5}
+              textAlign="center"
+              fontWeight={600}
+              fontSize={30}
+              color="#2aa7ff"
+            >
+              Please Select State and City
+            </Typography>
+          </Box>
         )}
       </Box>
       <Box
