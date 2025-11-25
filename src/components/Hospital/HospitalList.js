@@ -55,7 +55,7 @@ export const HospitalList = ({ hospital }) => {
           <Typography fontWeight={700}>{hospital["Address"]}</Typography>
           <Typography>{hospital["Hospital Type"]}</Typography>
           <Box display="flex" gap={1} alignItems="center" bgcolor="green" width="40px" padding="1px 15px" color="white" borderRadius={1}>
-            <ThumbUpIcon/>
+            <ThumbUpIcon/>n
             <Typography>{hospital["Hospital overall rating"] === "Not Available" ? "5" : hospital["Hospital overall rating"]}</Typography>
           </Box>
         </Box>

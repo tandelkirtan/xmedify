@@ -87,7 +87,7 @@ export const HospitalSearch = () => {
             <em>State</em>
           </MenuItem>
           {state && state.map((stateName) => (
-            <MenuItem key={stateName} value={stateName}>
+            <MenuItem component="li" key={stateName} value={stateName}>
               {stateName}
             </MenuItem>
           ))}
@@ -111,7 +111,7 @@ export const HospitalSearch = () => {
             <em>City</em>
           </MenuItem>
           {city && city.map((cityName) => (
-            <MenuItem key={cityName} value={cityName}>
+            <MenuItem component="li" key={cityName} value={cityName}>
               {cityName}
             </MenuItem>
           ))}
